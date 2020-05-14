@@ -97,32 +97,35 @@ formatter.step({
   "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
+});
 formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser\" matches more than one step definition:\n  \"User Launched {string} in Browser\" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)\n  \"^User Launched \"([^\"]*)\" in Browser$\" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:830)\r\n",
-  "status": "ambiguous"
+  "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Application base page is displayed with Login Username and Password Fields",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"Application base page is displayed with Login Username and Password Fields\" matches more than one step definition:\n  \"Application base page is displayed with Login Username and Password Fields\" in com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()\n  \"^Application base page is displayed with Login Username and Password Fields$\" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:830)\r\n",
-  "status": "ambiguous"
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()"
 });
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded1.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enters Username : \"1234556666\" , Password : \"MavDemo@01\"",
@@ -132,13 +135,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.user_enters_Username_Password(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded2.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Clicks on the submit button",
@@ -148,13 +152,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.clicks_on_the_submit_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded3.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Application page is displayed with PIN Number Field",
@@ -164,13 +169,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.application_page_is_displayed_with_PIN_Number_Field()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded4.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enters PIN : \"12345\"",
@@ -180,13 +186,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.user_enters_PIN(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded5.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Clicks on the validate PIN",
@@ -196,13 +203,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.clicks_on_the_validate_PIN()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded6.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Verifies the application is logged in successfully",
@@ -212,12 +220,13 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.KevinLogin.user_Verifies_the_application_is_logged_in_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded7.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded8.png", "Pass Screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -243,7 +252,7 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "name": "user launched \"\u003curl\u003e\" in browser",
+  "name": "User Launched \"\u003curl\u003e\" in Browser",
   "keyword": "Given "
 });
 formatter.step({
@@ -347,133 +356,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user launched \"http://demo.rapidtestpro.com/login.php\" in browser",
+  "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_launched_in_browser(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded2.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should enter \"1234556666\",\"MavDemo@01\" \"12345\" and click on submit button",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_enter_and_click_on_submit_button(java.lang.String,java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded3.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should validate page is displayed with all fund transfer fields",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_validate_page_is_displayed_with_all_fund_transfer_fields()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded4.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user enters \"Data001\" and fund transfer details",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_enters_and_fund_transfer_details(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded5.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user should clicks on the fund transfer button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_clicks_on_the_fund_transfer_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded6.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user verifies the fund transfer successful message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_verifies_the_fund_transfer_successful_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded7.png", "Pass Screenshot");
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded8.png", "Pass Screenshot");
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "To Verify the domestic fund transfer",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@FullSuite"
-    },
-    {
-      "name": "@smokeTest"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.beforestep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user launched \"http://demo.rapidtestpro.com/login.php\" in browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_launched_in_browser(java.lang.String)"
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -520,7 +407,7 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"Data002\" and fund transfer details",
+  "name": "user enters \"Data001\" and fund transfer details",
   "keyword": "Then "
 });
 formatter.match({
@@ -591,11 +478,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user launched \"http://demo.rapidtestpro.com/login.php\" in browser",
+  "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_launched_in_browser(java.lang.String)"
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -642,7 +529,7 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"Data003\" and fund transfer details",
+  "name": "user enters \"Data002\" and fund transfer details",
   "keyword": "Then "
 });
 formatter.match({
@@ -713,11 +600,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user launched \"http://demo.rapidtestpro.com/login.php\" in browser",
+  "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_launched_in_browser(java.lang.String)"
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -764,7 +651,7 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"Data004\" and fund transfer details",
+  "name": "user enters \"Data003\" and fund transfer details",
   "keyword": "Then "
 });
 formatter.match({
@@ -835,11 +722,11 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user launched \"http://demo.rapidtestpro.com/login.php\" in browser",
+  "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_launched_in_browser(java.lang.String)"
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -886,7 +773,7 @@ formatter.beforestep({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters \"Data005\" and fund transfer details",
+  "name": "user enters \"Data004\" and fund transfer details",
   "keyword": "Then "
 });
 formatter.match({
@@ -934,6 +821,128 @@ formatter.afterstep({
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded36.png", "Pass Screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "To Verify the domestic fund transfer",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@FullSuite"
+    },
+    {
+      "name": "@smokeTest"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded37.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should enter \"1234556666\",\"MavDemo@01\" \"12345\" and click on submit button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_enter_and_click_on_submit_button(java.lang.String,java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded38.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should validate page is displayed with all fund transfer fields",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_validate_page_is_displayed_with_all_fund_transfer_fields()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded39.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \"Data005\" and fund transfer details",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_enters_and_fund_transfer_details(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded40.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should clicks on the fund transfer button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_should_clicks_on_the_fund_transfer_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded41.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.beforestep({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user verifies the fund transfer successful message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.Shambhu_DFundtransfer.user_verifies_the_fund_transfer_successful_message()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded42.png", "Pass Screenshot");
+formatter.afterstep({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded43.png", "Pass Screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -1028,7 +1037,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded37.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded44.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
@@ -1045,7 +1054,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded38.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded45.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
@@ -1062,7 +1071,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded39.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded46.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
@@ -1079,7 +1088,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded40.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded47.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
@@ -1096,11 +1105,11 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded41.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded48.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded42.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded49.png", "Pass Screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -1189,32 +1198,35 @@ formatter.step({
   "name": "User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser",
   "keyword": "Given "
 });
-formatter.match({});
-formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"User Launched \"http://demo.rapidtestpro.com/login.php\" in Browser\" matches more than one step definition:\n  \"User Launched {string} in Browser\" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)\n  \"^User Launched \"([^\"]*)\" in Browser$\" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:830)\r\n",
-  "status": "ambiguous"
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)"
 });
-formatter.embedding("image/png", "embedded43.png", "Pass Screenshot");
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded50.png", "Pass Screenshot");
 formatter.afterstep({
   "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Application base page is displayed with Login Username and Password Fields",
   "keyword": "And "
 });
-formatter.match({});
-formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"Application base page is displayed with Login Username and Password Fields\" matches more than one step definition:\n  \"Application base page is displayed with Login Username and Password Fields\" in com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()\n  \"^Application base page is displayed with Login Username and Password Fields$\" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:830)\r\n",
-  "status": "ambiguous"
+formatter.match({
+  "location": "com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()"
 });
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded51.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "The user navigates to the signup page",
@@ -1224,13 +1236,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.Mohan_SignUpSteps.the_user_navigates_to_the_signup_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded52.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User enters all the details needed",
@@ -1240,13 +1253,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_enters_all_the_details_needed()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded53.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Clicks on the Register account button",
@@ -1256,13 +1270,14 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.Mohan_SignUpSteps.clicks_on_the_Register_account_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded54.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.beforestep({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Verifies that the application has created account successfully",
@@ -1272,12 +1287,13 @@ formatter.match({
   "location": "com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Verifies_that_the_application_has_created_account_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
+formatter.embedding("image/png", "embedded55.png", "Pass Screenshot");
 formatter.afterstep({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded44.png", "Pass Screenshot");
+formatter.embedding("image/png", "embedded56.png", "Pass Screenshot");
 formatter.after({
   "status": "passed"
 });

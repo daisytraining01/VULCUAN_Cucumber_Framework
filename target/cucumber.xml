@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="150.262">
-    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="22.459">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="59.994">
+    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="57.717">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 And Application base page is displayed with Login Username and Password Fields.passed
@@ -13,7 +13,7 @@ Then User Verifies the application is logged in successfully................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer" time="22.709">
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer" time="57.779">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
@@ -24,7 +24,7 @@ Then user verifies the fund transfer successful message.....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 2" time="20.807">
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 2" time="58.904">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
@@ -35,7 +35,7 @@ Then user verifies the fund transfer successful message.....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 3" time="21.472">
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 3" time="55.78">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
@@ -46,7 +46,7 @@ Then user verifies the fund transfer successful message.....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 4" time="21.084">
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 4" time="57.841">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
@@ -57,7 +57,7 @@ Then user verifies the fund transfer successful message.....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 5" time="20.794">
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 5" time="59.209">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
@@ -68,7 +68,7 @@ Then user verifies the fund transfer successful message.....................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Sign out from the application" name="To Verify the signup with Valid Credentials" time="9.554">
+    <testcase classname="Sign out from the application" name="To Verify the signup with Valid Credentials" time="56.781">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser an logged into the application with "1234556666" and "MavDemo@01".passed
 And user enters the pin an  login to the application........................passed
@@ -78,7 +78,7 @@ Then The application prompts to login.......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Sign up for a new account" name="To Verify the signup with Valid Credentials" time="10.479">
+    <testcase classname="Sign up for a new account" name="To Verify the signup with Valid Credentials" time="57.316">
         <system-out>
             <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
 And Application base page is displayed with Login Username and Password Fields.passed
