@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48981" started-at="2020-05-09T16:44:17 IST" finished-at="2020-05-09T16:45:06 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="48981" started-at="2020-05-09T16:44:17 IST" finished-at="2020-05-09T16:45:06 IST">
+      <class name="com.cucumber.RunCucumberTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="setUpClass" is-config="true" duration-ms="1648" started-at="2020-05-09T16:44:17 IST" finished-at="2020-05-09T16:44:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2020-05-09T16:44:19 IST" finished-at="2020-05-09T16:44:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a7f959b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-05-09T16:44:19 IST" finished-at="2020-05-09T16:44:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a7f959b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="runScenario" duration-ms="45310" started-at="2020-05-09T16:44:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-09T16:45:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Verify the Login with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login with Valid Credentials and Logout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="runScenario" duration-ms="45286" started-at="2020-05-09T16:44:19 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-09T16:45:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Verify the Login with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login with Valid Credentials and Logout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="afterMethod" is-config="true" duration-ms="7" started-at="2020-05-09T16:45:04 IST" finished-at="2020-05-09T16:45:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a7f959b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="afterMethod" is-config="true" duration-ms="5" started-at="2020-05-09T16:45:04 IST" finished-at="2020-05-09T16:45:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4a7f959b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.cucumber.RunCucumberTest@78e67e0a]" name="tearDownClass" is-config="true" duration-ms="1781" started-at="2020-05-09T16:45:04 IST" finished-at="2020-05-09T16:45:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.cucumber.RunCucumberTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
