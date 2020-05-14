@@ -5,9 +5,11 @@ import org.openqa.selenium.By;
 import com.cucumber.helper.ObjectHelper;
 
 public class LoginPage extends ObjectHelper{
-	
+
+
 public static final By UserName = InpuBoxByName("accno");
-	
+
+
 	
 	public static final By Password = InpuBoxByName("pass");
 

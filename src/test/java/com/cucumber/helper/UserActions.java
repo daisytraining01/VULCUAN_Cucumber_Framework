@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.enumerations.BrowserType;
 import com.manager.DriverManager;
 import com.manager.TestData;
@@ -93,5 +95,16 @@ public class UserActions {
 		driver.quit();
 
 	}
+	
+//	MOhan----------------------------
+	public void selectFromDropDown(By Locator, String text) {
+		Select element = new Select(driver.findElement(Locator));
+		element.selectByVisibleText(text);
+	}
+	
+	public void pressBackButton(){
+		driver.navigate().back();
+	}
+//	-------------------------------------------------------
 
 }

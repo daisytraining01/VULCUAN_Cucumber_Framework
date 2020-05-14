@@ -11,6 +11,7 @@ public class ObjectHelper {
 	protected static By Button(String fieldName) {
 		return By.xpath("//input[@class='button' and @value='"+fieldName+"']");
 	}
+
 	//Shambhu
 	protected static By Text_Button_Below_Label_(String fieldName) {
 		return By.xpath("//*[.='"+fieldName+"']");
@@ -19,8 +20,15 @@ public class ObjectHelper {
 		return By.name(fieldName);
 	}
 	
+//	MOhan-----------------------------------
+
+	
 	protected static By InpuBoxByName(String Name) {
 		return By.name(Name);
 	}
+
+	
+//	----------------------------------------
+
 
 }
