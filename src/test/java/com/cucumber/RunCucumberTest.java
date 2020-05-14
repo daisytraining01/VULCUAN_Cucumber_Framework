@@ -15,7 +15,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = { "classpath:features" },
 		glue = {"classpath:com.cucumber.stepdefinitions","classpath:com.cucumber.helper" },
-		tags= {"@Regression"},
+		tags= {"@FullSuite"},
 		strict = true,
 		monochrome = true,
 		dryRun = false,

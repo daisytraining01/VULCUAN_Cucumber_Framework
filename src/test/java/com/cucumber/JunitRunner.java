@@ -10,9 +10,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = { "classpath:Features" },
+		features = { "classpath:features" },
 		glue = {"classpath:com.cucumber.stepdefinitions","classpath:com.cucumber.helper" },
-		tags= {"@smoke"},
+		tags= {"@FullSuite"},
 		strict = true,dryRun=false,
 		monochrome=true,
 		plugin = {"pretty","html:target/reports",

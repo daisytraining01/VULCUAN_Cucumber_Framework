@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.469">
+    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="33.49">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+And Application base page is displayed with Login Username and Password Fields.passed
+When User enters Username : "1234556666" , Password : "MavDemo@01"..........passed
+And Clicks on the submit button.............................................passed
+Then Application page is displayed with PIN Number Field....................passed
+When User enters PIN : "12345"..............................................passed
+And Clicks on the validate PIN..............................................passed
+Then User Verifies the application is logged in successfully................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
