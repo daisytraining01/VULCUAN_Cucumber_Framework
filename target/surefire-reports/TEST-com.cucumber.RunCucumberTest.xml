@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.cucumber.RunCucumberTest" time="49.17" tests="8" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mohan\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Users\mohan\eclipse-workspace\Cucumber orkspace\Day 5 Training.zip_expanded\Day 5 Training\CucumberFramework\EMBEDDED"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mohan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2019-09-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-13"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13+33"/>
+    <property name="user.name" value="mohan"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mohan\AppData\Local\Temp\"/>
+    <property name="java.version" value="13"/>
+    <property name="user.dir" value="C:\Users\mohan\eclipse-workspace\Cucumber orkspace\Day 5 Training.zip_expanded\Day 5 Training\CucumberFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mohan\eclipse-workspace\Cucumber orkspace\Day 5 Training.zip_expanded\Day 5 Training\CucumberFramework"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-13/bin/server;C:/Program Files/Java/jdk-13/bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-13\bin;C:\Program Files\Git\cmd;C:\Users\mohan\AppData\Local\Microsoft\WindowsApps;C:\Users\mohan\AppData\Roaming\npm;C:\Users\mohan\AppData\Local\atom\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.1\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\mohan\AppData\Local\Programs\Fiddler;C:\Program Files\heroku\bin;C:\Users\mohan\AppData\Local\Programs\Microsoft VS Code\bin;C:\apache-maven-3.6.3\bin;;C:\Windows\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="13+33"/>
+    <property name="classworlds.conf" value="C:\Users\mohan\eclipse-workspace\Cucumber orkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4479166674381829573.tmp"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="12.962">
+    <failure message="&quot;User Launched &quot;http://demo.rapidtestpro.com/login.php&quot; in Browser&quot; matches more than one step definition:&#10;  &quot;User Launched {string} in Browser&quot; in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)&#10;  &quot;^User Launched &quot;([^&quot;]*)&quot; in Browser$&quot; in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)" type="io.cucumber.core.runner.AmbiguousStepDefinitionsException">io.cucumber.core.runner.AmbiguousStepDefinitionsException: 
+"User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+</failure>
+    <system-out><![CDATA[
+@FullSuite @smokeTest
+Scenario Outline: To Verify the domestic fund transfer                                # features/Shambhu_DFT.feature:19
+
+@FullSuite @Login
+Scenario Outline: To Verify the Login with Valid Credentials                     # features/Kevin_login.feature:18
+
+@FullSuite @signOut
+Scenario Outline: To Verify the signup with Valid Credentials                                                                               # features/mohan_Signout.feature:14
+Before Hook
+
+@FullSuite @smokeTest
+Scenario Outline: To Verify the domestic fund transfer                                # features/Shambhu_DFT.feature:17
+Before Hook
+Before Hook
+
+@FullSuite @signup
+Scenario Outline: To Verify the signup with Valid Credentials                    # features/mohan_Signup.feature:16
+Before Hook
+Before Hook
+
+@FullSuite @smokeTest
+Scenario Outline: To Verify the domestic fund transfer                                # features/Shambhu_DFT.feature:16
+Before Hook
+
+@FullSuite @smokeTest
+Scenario Outline: To Verify the domestic fund transfer                                # features/Shambhu_DFT.feature:18
+Before Hook
+
+@FullSuite @smokeTest
+Scenario Outline: To Verify the domestic fund transfer                                # features/Shambhu_DFT.feature:20
+Before Hook
+  Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser        # null
+      io.cucumber.core.runner.AmbiguousStepDefinitionsException: "User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+
+    Embedding Pass Screenshot [image/png 5205 bytes]
+
+  And Application base page is displayed with Login Username and Password Fields # null
+      io.cucumber.core.runner.AmbiguousStepDefinitionsException: "Application base page is displayed with Login Username and Password Fields" matches more than one step definition:
+  "Application base page is displayed with Login Username and Password Fields" in com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()
+  "^Application base page is displayed with Login Username and Password Fields$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+  And The user navigates to the signup page                                      # com.cucumber.stepdefinitions.Mohan_SignUpSteps.the_user_navigates_to_the_signup_page()
+  When User enters all the details needed                                        # com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_enters_all_the_details_needed()
+  And Clicks on the Register account button                                      # com.cucumber.stepdefinitions.Mohan_SignUpSteps.clicks_on_the_Register_account_button()
+  Then User Verifies that the application has created account successfully       # com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Verifies_that_the_application_has_created_account_successfully()
+After Hook
+
+    Embedding Pass Screenshot [image/png 5205 bytes]
+
+  Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser        # null
+      io.cucumber.core.runner.AmbiguousStepDefinitionsException: "User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+
+    Embedding Pass Screenshot [image/png 5205 bytes]
+
+  And Application base page is displayed with Login Username and Password Fields # null
+      io.cucumber.core.runner.AmbiguousStepDefinitionsException: "Application base page is displayed with Login Username and Password Fields" matches more than one step definition:
+  "Application base page is displayed with Login Username and Password Fields" in com.cucumber.stepdefinitions.KevinLogin.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()
+  "^Application base page is displayed with Login Username and Password Fields$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.application_base_page_is_displayed_with_Login_Username_and_Password_Fields()
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:124)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+  When User enters Username : "1234556666" , Password : "MavDemo@01"             # com.cucumber.stepdefinitions.KevinLogin.user_enters_Username_Password(java.lang.String,java.lang.String)
+  And Clicks on the submit button                                                # com.cucumber.stepdefinitions.KevinLogin.clicks_on_the_submit_button()
+  Then Application page is displayed with PIN Number Field                       # com.cucumber.stepdefinitions.KevinLogin.application_page_is_displayed_with_PIN_Number_Field()
+  When User enters PIN : "12345"                                                 # com.cucumber.stepdefinitions.KevinLogin.user_enters_PIN(java.lang.String)
+  And Clicks on the validate PIN                                                 # com.cucumber.stepdefinitions.KevinLogin.clicks_on_the_validate_PIN()
+  Then User Verifies the application is logged in successfully                   # com.cucumber.stepdefinitions.KevinLogin.user_Verifies_the_application_is_logged_in_successfully()
+After Hook
+
+    Embedding Pass Screenshot [image/png 5205 bytes]
+
+]]></system-out>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (com.cucumber.RunCucumberTest).
+log4j:WARN No appenders could be found for logger (com.cucumber.RunCucumberTest).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN No appenders could be found for logger (com.cucumber.RunCucumberTest).
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (com.cucumber.RunCucumberTest).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN No appenders could be found for logger (com.cucumber.RunCucumberTest).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 26475
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 22231
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 25488
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 37813
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 29128
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 5660
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 10013
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 36238
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+May 14, 2020 8:52:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 14, 2020 8:52:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1589469777.916][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589469778.478][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589469778.633][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589469778.750][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589469778.862][SEVERE]: Timed out receiving message from renderer: 0.100
+May 14, 2020 8:52:59 PM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process Process[pid=13172, exitValue=1]
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="14.258">
+    <failure message="&quot;User Launched &quot;http://demo.rapidtestpro.com/login.php&quot; in Browser&quot; matches more than one step definition:&#10;  &quot;User Launched {string} in Browser&quot; in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)&#10;  &quot;^User Launched &quot;([^&quot;]*)&quot; in Browser$&quot; in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)" type="io.cucumber.core.runner.AmbiguousStepDefinitionsException">io.cucumber.core.runner.AmbiguousStepDefinitionsException: 
+"User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+</failure>
+    <system-err><![CDATA[[1589469779.647][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589469779.751][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="27.684"/>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="45.418"/>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="45.834"/>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="46.11"/>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="46.229"/>
+  <testcase name="runScenario" classname="com.cucumber.RunCucumberTest" time="46.578"/>
+</testsuite>

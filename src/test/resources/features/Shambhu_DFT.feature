@@ -4,7 +4,7 @@ Feature: Demo_Bank Domestic Fund Transfer Validation
 
 @smokeTest 
 Scenario Outline: To Verify the domestic fund transfer 
-	Given user launched "<url>" in browser 
+	Given User Launched "<url>" in Browser 
 	Then user should enter "<accountNumber>","<password>" "<pinNumber>" and click on submit button 
 	And user should validate page is displayed with all fund transfer fields 
 	Then user enters "<dataBinding>" and fund transfer details 

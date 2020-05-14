@@ -27,11 +27,7 @@ public class Shambhu_DFundtransfer {
 		this.User = User;
 	}
 
-	@Given("user launched {string} in browser")
-	public void user_launched_in_browser(String Url) {
-		User.OpenUrl(Url);
-		Log.info("Application is launched with URL");
-	}
+
 
 	@Then("user should enter {string},{string} {string} and click on submit button")
 	public void user_should_enter_and_click_on_submit_button(String accountNum, String pass, String pin) {

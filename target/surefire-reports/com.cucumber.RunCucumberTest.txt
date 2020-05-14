@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.cucumber.RunCucumberTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 49.17 s <<< FAILURE! - in com.cucumber.RunCucumberTest
+runScenario(com.cucumber.RunCucumberTest)  Time elapsed: 12.962 s  <<< FAILURE!
+io.cucumber.core.runner.AmbiguousStepDefinitionsException: 
+"User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+
+runScenario(com.cucumber.RunCucumberTest)  Time elapsed: 14.258 s  <<< FAILURE!
+io.cucumber.core.runner.AmbiguousStepDefinitionsException: 
+"User Launched "http://demo.rapidtestpro.com/login.php" in Browser" matches more than one step definition:
+  "User Launched {string} in Browser" in com.cucumber.stepdefinitions.KevinLogin.user_Launched_in_Browser(java.lang.String)
+  "^User Launched "([^"]*)" in Browser$" in com.cucumber.stepdefinitions.Mohan_SignUpSteps.user_Launched_in_Browser(java.lang.String)
+

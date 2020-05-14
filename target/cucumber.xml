@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="150.262">
+    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="22.459">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+And Application base page is displayed with Login Username and Password Fields.passed
+When User enters Username : "1234556666" , Password : "MavDemo@01"..........passed
+And Clicks on the submit button.............................................passed
+Then Application page is displayed with PIN Number Field....................passed
+When User enters PIN : "12345"..............................................passed
+And Clicks on the validate PIN..............................................passed
+Then User Verifies the application is logged in successfully................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer" time="22.709">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
+And user should validate page is displayed with all fund transfer fields....passed
+Then user enters "Data001" and fund transfer details........................passed
+And user should clicks on the fund transfer button..........................passed
+Then user verifies the fund transfer successful message.....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 2" time="20.807">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
+And user should validate page is displayed with all fund transfer fields....passed
+Then user enters "Data002" and fund transfer details........................passed
+And user should clicks on the fund transfer button..........................passed
+Then user verifies the fund transfer successful message.....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 3" time="21.472">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
+And user should validate page is displayed with all fund transfer fields....passed
+Then user enters "Data003" and fund transfer details........................passed
+And user should clicks on the fund transfer button..........................passed
+Then user verifies the fund transfer successful message.....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 4" time="21.084">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
+And user should validate page is displayed with all fund transfer fields....passed
+Then user enters "Data004" and fund transfer details........................passed
+And user should clicks on the fund transfer button..........................passed
+Then user verifies the fund transfer successful message.....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 5" time="20.794">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
+And user should validate page is displayed with all fund transfer fields....passed
+Then user enters "Data005" and fund transfer details........................passed
+And user should clicks on the fund transfer button..........................passed
+Then user verifies the fund transfer successful message.....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sign out from the application" name="To Verify the signup with Valid Credentials" time="9.554">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser an logged into the application with "1234556666" and "MavDemo@01".passed
+And user enters the pin an  login to the application........................passed
+And the user presses the logout button......................................passed
+When The user presses the browser back button...............................passed
+Then The application prompts to login.......................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Sign up for a new account" name="To Verify the signup with Valid Credentials" time="10.479">
+        <system-out>
+            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
+And Application base page is displayed with Login Username and Password Fields.passed
+And The user navigates to the signup page...................................passed
+When User enters all the details needed.....................................passed
+And Clicks on the Register account button...................................passed
+Then User Verifies that the application has created account successfully....passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
