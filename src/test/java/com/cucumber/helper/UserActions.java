@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.enumerations.BrowserType;
 import com.manager.DriverManager;
@@ -30,6 +31,16 @@ public class UserActions {
 		Log.info("Application URL :" + URL);
 		driver.get(URL);
 	}
+	//shambhu
+		public void Select_By_VisibleText(By locator,String text) {
+			Select s=new Select(driver.findElement(locator));
+			 s.selectByVisibleText(text);
+			
+		}
+		public boolean get_Url() {
+			return driver.getCurrentUrl().contains("Token");
+		}
+	//=======================================================================
 
 	public void CaptureScreenshot(Scenario scenario, String text) {
 		try {
