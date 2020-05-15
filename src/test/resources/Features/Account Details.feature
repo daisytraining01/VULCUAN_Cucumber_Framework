@@ -5,7 +5,7 @@ Feature: Online Banking_Account Details
   @smoketest
   Scenario Outline: To check if the user is able to view the Account Details
     Given The application opens using the "<url>"
-    And enters the login and password "<login>" "<password>"
+    And enters the login and password "<username>" "<password>"
     Then the user clicks submit
     And the user enters the pin "<pin>"
     Then the application logins
