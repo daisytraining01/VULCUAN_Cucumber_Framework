@@ -1,4 +1,3 @@
-
 @FullSuite
 Feature: Sign up for a new account
   To Check application is allowing user to perform signup with valid credentials 
