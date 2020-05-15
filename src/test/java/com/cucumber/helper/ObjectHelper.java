@@ -12,4 +12,12 @@ public class ObjectHelper {
 		return By.xpath("//input[@class='button' and @value='"+fieldName+"']");
 	}
 
+	protected static By InpuBoxByName(String Name) {
+        return By.name(Name);
+    }
+	
+	protected static By Linkedtext(String Name) {
+        return By.linkText(Name);
+	}
+        
 }
