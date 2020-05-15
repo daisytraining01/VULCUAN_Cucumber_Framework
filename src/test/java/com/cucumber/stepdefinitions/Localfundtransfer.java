@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 
 import com.codoid.products.exception.FilloException;
 import com.cucumber.helper.UserActions;
-import com.cucumber.pageobjects.*;
+import com.cucumber.pageobjects.Localpage;
 import com.manager.TestData;
 
 import io.cucumber.java.en.Given;
@@ -26,12 +26,7 @@ public class Localfundtransfer {
 		this.User = User;
 	}
 
-	@Given("User Launched {string} in Browser")
-	public void user_Launched_in_Browser(String url) {
-		User.OpenUrl(url);
-		Log.info("Application is launched with URL");
 
-	}
 
 	@Then("User enters Username : {string} , Password : {string}, pin: {string} and click on login button")
 	public void user_enters_Username_Password_pin_and_click_on_login_button(String userName, String password,
