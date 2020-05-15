@@ -1,92 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="8" time="59.994">
-    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="57.717">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-And Application base page is displayed with Login Username and Password Fields.passed
-When User enters Username : "1234556666" , Password : "MavDemo@01"..........passed
-And Clicks on the submit button.............................................passed
-Then Application page is displayed with PIN Number Field....................passed
-When User enters PIN : "12345"..............................................passed
-And Clicks on the validate PIN..............................................passed
-Then User Verifies the application is logged in successfully................passed
-]]>
-        </system-out>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="0.618">
+    <testcase classname="Login with Valid Credentials" name="To Verify the Login with Valid Credentials" time="0.086">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+And Application base page is displayed with Login Username and Password Fields.skipped
+When User enters Username : "1234556666" , Password : "MavDemo@01"..........skipped
+And Clicks on the submit button.............................................skipped
+Then Application page is displayed with PIN Number Field....................skipped
+When User enters PIN : "12345"..............................................skipped
+And Clicks on the validate PIN..............................................skipped
+Then User Verifies the application is logged in successfully................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer" time="57.779">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
-And user should validate page is displayed with all fund transfer fields....passed
-Then user enters "Data001" and fund transfer details........................passed
-And user should clicks on the fund transfer button..........................passed
-Then user verifies the fund transfer successful message.....................passed
-]]>
-        </system-out>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer" time="0.031">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.skipped
+And user should validate page is displayed with all fund transfer fields....skipped
+Then user enters "Data001" and fund transfer details........................skipped
+And user should clicks on the fund transfer button..........................skipped
+Then user verifies the fund transfer successful message.....................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 2" time="58.904">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
-And user should validate page is displayed with all fund transfer fields....passed
-Then user enters "Data002" and fund transfer details........................passed
-And user should clicks on the fund transfer button..........................passed
-Then user verifies the fund transfer successful message.....................passed
-]]>
-        </system-out>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 2" time="0.01">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.skipped
+And user should validate page is displayed with all fund transfer fields....skipped
+Then user enters "Data002" and fund transfer details........................skipped
+And user should clicks on the fund transfer button..........................skipped
+Then user verifies the fund transfer successful message.....................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 3" time="55.78">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
-And user should validate page is displayed with all fund transfer fields....passed
-Then user enters "Data003" and fund transfer details........................passed
-And user should clicks on the fund transfer button..........................passed
-Then user verifies the fund transfer successful message.....................passed
-]]>
-        </system-out>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 3" time="0.008">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.skipped
+And user should validate page is displayed with all fund transfer fields....skipped
+Then user enters "Data003" and fund transfer details........................skipped
+And user should clicks on the fund transfer button..........................skipped
+Then user verifies the fund transfer successful message.....................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 4" time="57.841">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
-And user should validate page is displayed with all fund transfer fields....passed
-Then user enters "Data004" and fund transfer details........................passed
-And user should clicks on the fund transfer button..........................passed
-Then user verifies the fund transfer successful message.....................passed
-]]>
-        </system-out>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 4" time="0.008">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.skipped
+And user should validate page is displayed with all fund transfer fields....skipped
+Then user enters "Data004" and fund transfer details........................skipped
+And user should clicks on the fund transfer button..........................skipped
+Then user verifies the fund transfer successful message.....................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 5" time="59.209">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.passed
-And user should validate page is displayed with all fund transfer fields....passed
-Then user enters "Data005" and fund transfer details........................passed
-And user should clicks on the fund transfer button..........................passed
-Then user verifies the fund transfer successful message.....................passed
-]]>
-        </system-out>
+    <testcase classname="Demo_Bank Domestic Fund Transfer Validation" name="To Verify the domestic fund transfer 5" time="0.009">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" and click on submit button.skipped
+And user should validate page is displayed with all fund transfer fields....skipped
+Then user enters "Data005" and fund transfer details........................skipped
+And user should clicks on the fund transfer button..........................skipped
+Then user verifies the fund transfer successful message.....................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Sign out from the application" name="To Verify the signup with Valid Credentials" time="56.781">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser an logged into the application with "1234556666" and "MavDemo@01".passed
-And user enters the pin an  login to the application........................passed
-And the user presses the logout button......................................passed
-When The user presses the browser back button...............................passed
-Then The application prompts to login.......................................passed
-]]>
-        </system-out>
+    <testcase classname="International Fund Transfer" name="To Verify the International Fund transfer" time="0.035">
+        <system-out><![CDATA[Given user launched "http://demo.rapidtestpro.com/login.php" in browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" ,click on submit button and navigate to transfer menu.skipped
+Then Fund transfer page is displayed with all the fields....................skipped
+Then user enters fund transfer details......................................skipped
+And user should click on the fund transfer button...........................skipped
+Then user verifys the fund transfer successful message......................skipped
+]]></system-out>
     </testcase>
-    <testcase classname="Sign up for a new account" name="To Verify the signup with Valid Credentials" time="57.316">
-        <system-out>
-            <![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....passed
-And Application base page is displayed with Login Username and Password Fields.passed
-And The user navigates to the signup page...................................passed
-When User enters all the details needed.....................................passed
-And Clicks on the Register account button...................................passed
-Then User Verifies that the application has created account successfully....passed
-]]>
-        </system-out>
+    <testcase classname="International Fund Transfer" name="To Verify the International Fund transfer 2" time="0.011">
+        <system-out><![CDATA[Given user launched "http://demo.rapidtestpro.com/login.php" in browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" ,click on submit button and navigate to transfer menu.skipped
+Then Fund transfer page is displayed with all the fields....................skipped
+Then user enters fund transfer details......................................skipped
+And user should click on the fund transfer button...........................skipped
+Then user verifys the fund transfer successful message......................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="International Fund Transfer" name="To Verify the International Fund transfer 3" time="0.009">
+        <system-out><![CDATA[Given user launched "http://demo.rapidtestpro.com/login.php" in browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" ,click on submit button and navigate to transfer menu.skipped
+Then Fund transfer page is displayed with all the fields....................skipped
+Then user enters fund transfer details......................................skipped
+And user should click on the fund transfer button...........................skipped
+Then user verifys the fund transfer successful message......................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="International Fund Transfer" name="To Verify the International Fund transfer 4" time="0.01">
+        <system-out><![CDATA[Given user launched "http://demo.rapidtestpro.com/login.php" in browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" ,click on submit button and navigate to transfer menu.skipped
+Then Fund transfer page is displayed with all the fields....................skipped
+Then user enters fund transfer details......................................skipped
+And user should click on the fund transfer button...........................skipped
+Then user verifys the fund transfer successful message......................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="International Fund Transfer" name="To Verify the International Fund transfer 5" time="0.008">
+        <system-out><![CDATA[Given user launched "http://demo.rapidtestpro.com/login.php" in browser.....skipped
+Then user should enter "1234556666","MavDemo@01" "12345" ,click on submit button and navigate to transfer menu.skipped
+Then Fund transfer page is displayed with all the fields....................skipped
+Then user enters fund transfer details......................................skipped
+And user should click on the fund transfer button...........................skipped
+Then user verifys the fund transfer successful message......................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign out from the application" name="To Verify the signup with Valid Credentials" time="0.012">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser an logged into the application with "1234556666" and "MavDemo@01".skipped
+And user enters the pin an  login to the application........................skipped
+And the user presses the logout button......................................skipped
+When The user presses the browser back button...............................skipped
+Then The application prompts to login.......................................skipped
+]]></system-out>
+    </testcase>
+    <testcase classname="Sign up for a new account" name="To Verify the signup with Valid Credentials" time="0.012">
+        <system-out><![CDATA[Given User Launched "http://demo.rapidtestpro.com/login.php" in Browser.....skipped
+And Application base page is displayed with Login Username and Password Fields.skipped
+And The user navigates to the signup page...................................skipped
+When User enters all the details needed.....................................skipped
+And Clicks on the Register account button...................................skipped
+Then User Verifies that the application has created account successfully....skipped
+]]></system-out>
     </testcase>
 </testsuite>
