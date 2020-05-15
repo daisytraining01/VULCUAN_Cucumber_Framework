@@ -36,7 +36,7 @@ public class Localfundtransfer {
 	@Then("User enters Username : {string} , Password : {string}, pin: {string} and click on login button")
 	public void user_enters_Username_Password_pin_and_click_on_login_button(String userName, String password,
 			String pin) {
-		User.SendKeys(Localpage.receiverBank, userName);
+		User.SendKeys(Localpage.accountNum, userName);
 		User.SendKeys(Localpage.password, password);
 		User.Click(Localpage.LoginButton);
 		User.SendKeys(Localpage.PIN, pin);
@@ -65,7 +65,7 @@ public class Localfundtransfer {
 
 @Then("User enters all fund tranfer mandatory details")
 public void user_enters_all_fund_tranfer_mandatory_details() throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
-	Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "Databinding", "TestData_001", "LocalFT");
+	Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData_desalin.xlsx", "Databinding", "TestData_001", "LocalFT");
 		Thread.sleep(2000);
 	  User.SendKeys(Localpage.receiverBank, amountTranserData.get("ReceiverBankName") );
 	  User.SendKeys(Localpage.receiverName, amountTranserData.get("ReceiverName") );
