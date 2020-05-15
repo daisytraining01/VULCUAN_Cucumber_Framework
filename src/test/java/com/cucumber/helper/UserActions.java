@@ -32,7 +32,16 @@ public class UserActions {
 		Log.info("Application URL :" + URL);
 		driver.get(URL);
 	}
-
+//desalin
+	public void Select_By_VisibleText(By locator,String text) {
+		Select s=new Select(driver.findElement(locator));
+		 s.selectByVisibleText(text);
+		
+	}
+	public boolean get_Url() {
+		return driver.getCurrentUrl().contains("Token");
+	}
+	//=================================================================
 	public void CaptureScreenshot(Scenario scenario, String text) {
 		try {
 			byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);

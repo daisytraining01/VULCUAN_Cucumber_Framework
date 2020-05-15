@@ -14,12 +14,24 @@ public class ObjectHelper {
 	
 	
 	
-//	MOhan-----------------------------------
+//	Mohan-----------------------------------
 	
 	protected static By InpuBoxByName(String Name) {
 		return By.name(Name);
 	}
 	
 //	----------------------------------------
+//desalin
+	protected static By InputBox_Below_Label_Name(String fieldName) {
+        return By.name(fieldName);
+    }
+	protected static By Button_Below_Label_Xpath(String fieldName) {
+		return By.xpath("//*[.='"+fieldName+"']");
+	}
+	
+	
+	
+	
+	
+	}
 
-}
