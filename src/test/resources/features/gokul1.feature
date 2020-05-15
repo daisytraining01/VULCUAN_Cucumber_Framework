@@ -11,6 +11,8 @@ Feature: To check whether user able to login and view Account statement
   And user enters Pin "<pin>"
   Then user clicks validate Pin
   And user able to login successfully
+  And User to click on account statement menu
+  Then User can able to view the latest account statement on screen
   
     Examples:
     
@@ -18,9 +20,4 @@ Feature: To check whether user able to login and view Account statement
    |http://demo.rapidtestpro.com/login.php | 1234556666 | MavDemo@01 | 12345 |
     
     
-  @smoke1
-  Scenario: User able to login the applica
-    Given Upon successfull login user able to land Account summary screen
-    And User to click on account statement menu
-    Then User can able to view the latest account statement on screen
-    
+ 

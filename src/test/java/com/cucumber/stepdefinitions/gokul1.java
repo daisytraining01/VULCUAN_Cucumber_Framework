@@ -5,6 +5,8 @@ import static org.junit.Assert.assertEquals;
 import java.util.Hashtable;
 import java.util.logging.Logger;
 
+import org.openqa.selenium.By;
+
 import com.cucumber.helper.UserActions;
 import com.cucumber.pageobjects.LoginPage;
 
@@ -75,13 +77,12 @@ public class gokul1 {
 
 	@Then("user able to login successfully")
 	public void user_able_to_login_successfully() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
 	}
 
 	@Given("Upon successfull login user able to land Account summary screen")
 	public void upon_successfull_login_user_able_to_land_Account_summary_screen() {
-	    // Write code here that turns the phrase above into concrete actions
+	   
 	    
 	}
 
@@ -93,8 +94,7 @@ public class gokul1 {
 
 	@Then("User can able to view the latest account statement on screen")
 	public void user_can_able_to_view_the_latest_account_statement_on_screen() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		assertEquals(true, logger.isDisplayed(By.xpath("/html/body/table/tbody/tr[3]/td[2]/table/tbody/tr/td/p[1]")));
 	}
 
 

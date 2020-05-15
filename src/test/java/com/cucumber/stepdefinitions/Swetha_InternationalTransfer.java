@@ -64,9 +64,11 @@ public class Swetha_InternationalTransfer {
 		 Log.info("All transfer mandatory field are displayed");
 	}
 
-	@Then("user enters fund transfer details")
-	public void user_enters_fund_transfer_details() throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
-		Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", "Data001", "InternationalFT");
+
+	
+	@Then("user enters fund transfer {string}")
+	public void user_enters_fund_transfer(String data) throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
+		Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", data, "InternationalFT");
  		Thread.sleep(3000);
  		System.out.println(amountTranserData);
  		System.out.println(amountTranserData.get("ReciverBankName"));
@@ -80,8 +82,10 @@ public class Swetha_InternationalTransfer {
 		  User.SendKeys(InternationalPage.dateOfTransfer, amountTranserData.get("DOT"));
 		  User.SendKeys(InternationalPage.transferDesc, amountTranserData.get("TransferDesc"));
 		  Log.info("Transfer datails are entered");
-	   
 	}
+	
+	
+	
 
 	@Then("user should click on the fund transfer button")
 	public void user_should_click_on_the_fund_transfer_button() {
