@@ -13,6 +13,7 @@ public class ObjectHelper {
 	}
 
 
+
 	//Shambhu
 		protected static By Button_Below_Label_Xpath(String fieldName) {//(//*[@name='rbname'])[2]
 			return By.xpath("//*[.='"+fieldName+"']");
@@ -36,6 +37,13 @@ public class ObjectHelper {
 	protected static By LinkText_(String linktext) {
 		return By.linkText(linktext);
 	}
+
+
+	
+	protected static By Linkedtext(String Name) {
+        return By.linkText(Name);
+	}
+        
 
 }
 
