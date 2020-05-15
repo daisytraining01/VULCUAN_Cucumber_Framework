@@ -22,4 +22,7 @@ public class ObjectHelper {
 	
 //	----------------------------------------
 
+protected static By Linkedtext(String Name) {
+    return By.linkText(Name);
+}
 }
