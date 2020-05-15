@@ -20,6 +20,7 @@ public static final By UserName = InpuBoxByName("accno");
 	public static final By PIN = InpuBoxByName("accpin");
 
 	public static final By AccountStatement = Linkedtext("Account Statement");
+	public static final By AccountDetails = Linkedtext("Account Details");
 
 
 
