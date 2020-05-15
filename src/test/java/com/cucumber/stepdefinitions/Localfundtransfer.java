@@ -62,21 +62,33 @@ public class Localfundtransfer {
 		 Log.info("All transfer fields are displayed");
 
 	}
+	
 
-@Then("User enters all fund tranfer mandatory details")
-public void user_enters_all_fund_tranfer_mandatory_details() throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
-	Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData_desalin.xlsx", "Databinding", "TestData_001", "LocalFT");
-		Thread.sleep(2000);
-	  User.SendKeys(Localpage.receiverBank, amountTranserData.get("ReceiverBankName") );
-	  User.SendKeys(Localpage.receiverName, amountTranserData.get("ReceiverName") );
-	  User.SendKeys(Localpage.receiverAccountNum, amountTranserData.get("ReceiverAccNum") );
-	  User.SendKeys(Localpage.swiftNumber, amountTranserData.get("SWIFTmsg"));
-	  User.SendKeys(Localpage.transferAmt,amountTranserData.get("Amount") );
-	  User.Select_By_VisibleText(Localpage.transferType,amountTranserData.get("TransferType"));
-	  User.SendKeys(Localpage.dateOfTransfer, amountTranserData.get("DateofTransfer"));
-	  User.SendKeys(Localpage.transferDesc, amountTranserData.get("TransferDescription")); 
-	  Log.info("Transfer datails are filled");
+	
+	
+
+
+
+
+@Then("User enters all fund tranfer mandatory {string}")
+public void user_enters_all_fund_tranfer_mandatory(String Testata) throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
+	Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData_desalin.xlsx", "Databinding", Testata, "LocalFT");
+	Thread.sleep(2000);
+  User.SendKeys(Localpage.receiverBank, amountTranserData.get("ReceiverBankName") );
+  User.SendKeys(Localpage.receiverName, amountTranserData.get("ReceiverName") );
+  User.SendKeys(Localpage.receiverAccountNum, amountTranserData.get("ReceiverAccNum") );
+  User.SendKeys(Localpage.swiftNumber, amountTranserData.get("SWIFTmsg"));
+  User.SendKeys(Localpage.transferAmt,amountTranserData.get("Amount") );
+  User.Select_By_VisibleText(Localpage.transferType,amountTranserData.get("TransferType"));
+  User.SendKeys(Localpage.dateOfTransfer, amountTranserData.get("DateofTransfer"));
+  User.SendKeys(Localpage.transferDesc, amountTranserData.get("TransferDescription")); 
+  Log.info("Transfer datails are filled");
 }
+
+
+
+
+
 
 	@Then("Clicks on the transfer submit button")
 	public void clicks_on_the_transfer_submit_button() throws InterruptedException {
