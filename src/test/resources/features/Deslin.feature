@@ -1,7 +1,7 @@
 @FullSuite, @Regression
 Feature: balance trasaction should be done successfully
 
-  @smokeTest
+  @desalin
   Scenario Outline: To Veriy the local fund transfer
     Given User Launched "<URL>" in Browser
     Then User enters Username : "<userName>" , Password : "<password>", pin: "<pin>" and click on login button

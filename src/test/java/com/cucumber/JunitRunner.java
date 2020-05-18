@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 
 		features = { "classpath:features" },
 		glue = {"classpath:com.cucumber.stepdefinitions","classpath:com.cucumber.helper" },
-		tags= {"@FullSuite"},
+		tags= {"@gokul"},
 		strict = true,dryRun=false,
 		monochrome=true,
 		plugin = {"pretty","html:target/reports",

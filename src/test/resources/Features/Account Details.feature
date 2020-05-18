@@ -2,7 +2,7 @@
 Feature: Online Banking_Account Details
   I want to use this template for my feature file
 
-  @smoketest
+  @gayathri
   Scenario Outline: To check if the user is able to view the Account Details
     Given The application opens using the "<url>"
     And enters the login and password "<username>" "<password>"

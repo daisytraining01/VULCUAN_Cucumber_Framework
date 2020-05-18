@@ -1,7 +1,7 @@
 @FullSuite
 Feature: To check whether user able to login and view Account statement
   
-  @smoke
+  @gokul
   Scenario Outline: TO check user able to login
   Given User launches to "<url>" in the browser
   Then user able to view the home page with username and password field for login
