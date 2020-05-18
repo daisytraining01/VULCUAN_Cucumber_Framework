@@ -9,11 +9,11 @@ import com.enumerations.BrowserType;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DriverManager extends ExtentManager {
+public class DriverManagerDriver extends ExtentManager {
 	
 	public WebDriver driver;
 	
-	public DriverManager(BrowserType browser) {
+	public DriverManagerDriver(BrowserType browser) {
 		switch(browser) {
 		case Chrome:
 			WebDriverManager.chromedriver().setup();

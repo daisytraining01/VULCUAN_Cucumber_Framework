@@ -2,7 +2,7 @@
 Feature: Demo_Bank Domestic Fund Transfer Validation 
 	To Check application is allowing user to perform login with valid credentials and logout from the application
 
-@smokeTest 
+@Domestic
 Scenario Outline: To Verify the domestic fund transfer 
 	Given User Launched "<url>" in Browser 
 	Then user should enter "<accountNumber>","<password>" "<pinNumber>" and click on submit button 

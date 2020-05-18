@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.enumerations.BrowserType;
-import com.manager.DriverManager;
+import com.manager.DriverManagerDriver;
 import com.manager.TestData;
 
 import io.cucumber.java.Scenario;
@@ -25,7 +25,7 @@ public class UserActions {
 	TestData Data = new TestData();
 
 	public void LaunchBrowser(BrowserType browser) {
-		driver = new DriverManager(browser).getDriver();
+		driver = new DriverManagerDriver(browser).getDriver();
 	}
 
 	public void OpenUrl(String URL) {

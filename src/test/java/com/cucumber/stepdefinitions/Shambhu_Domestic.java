@@ -9,21 +9,23 @@ import java.util.Hashtable;
 import org.apache.log4j.Logger;
 
 import com.codoid.products.exception.FilloException;
+import com.cucumber.config;
 import com.cucumber.helper.UserActions;
 import com.cucumber.pageobjects.DomesticPage;
+import com.manager.DatabaseConnector;
 import com.manager.TestData;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
-public class Shambhu_DFundtransfer {
+public class Shambhu_Domestic {
 
 	private static Logger Log = Logger.getLogger(UserActions.class.getName());
 
 	UserActions User;
 	Hashtable<String, String> Data;
 
-	public Shambhu_DFundtransfer(UserActions User) {
+	public Shambhu_Domestic(UserActions User) {
 		this.User = User;
 	}
 
@@ -68,8 +70,23 @@ public class Shambhu_DFundtransfer {
 	@Then("user enters {string} and fund transfer details")
 	public void user_enters_and_fund_transfer_details(String dataBinding)  throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
 		
-		Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", dataBinding, "DomesticFTA");
- 		Thread.sleep(5000);
+		
+		
+		
+		
+		Hashtable<String, String> amountTranserData = null;
+		if (config.DataSource == "DATABASE") {
+			amountTranserData = new DatabaseConnector().getDataFromDatabase("DomesticTransfer", "DataBinding", dataBinding);
+		} else if (config.DataSource == "FILLO") {
+			amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", dataBinding, "DomesticFTA");
+		}
+		
+		
+		
+		
+		
+	
+
  		System.out.println(amountTranserData);
  		System.out.println(amountTranserData.get("ReciverBankName"));
 		System.out.println(amountTranserData.get("ReceiverName"));

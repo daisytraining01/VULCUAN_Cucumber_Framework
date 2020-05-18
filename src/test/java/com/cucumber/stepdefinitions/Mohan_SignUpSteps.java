@@ -2,15 +2,21 @@ package com.cucumber.stepdefinitions;
 
 import static org.testng.Assert.assertEquals;
 
+import java.sql.SQLException;
+import java.text.ParseException;
 import java.util.Hashtable;
 
 import org.apache.log4j.Logger;
 import org.apache.xmlbeans.impl.xb.xsdschema.Attribute.Use;
 import org.openqa.selenium.By;
 
+import com.codoid.products.exception.FilloException;
+import com.cucumber.config;
 import com.cucumber.helper.UserActions;
 import com.cucumber.pageobjects.LoginPage;
 import com.cucumber.pageobjects.SignupPage_mohan;
+import com.manager.DatabaseConnector;
+import com.manager.TestData;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -40,28 +46,58 @@ public class Mohan_SignUpSteps {
 
 	@When("User enters all the details needed")
 	public void user_enters_all_the_details_needed() {
-	    User.SendKeys(SignupPage_mohan.FirstName, "Mohan1");
-	    User.SendKeys(SignupPage_mohan.LastName, "Murugesan1");
-	    User.SendKeys(SignupPage_mohan.Password, "Demon@123");
-	    User.SendKeys(SignupPage_mohan.confirmPassword, "Demon@123");
-	    
-	    User.SendKeys(SignupPage_mohan.Email, "mohan1@zentpeople.com");
-	    User.SendKeys(SignupPage_mohan.PhonenNumber, "9876543210");
-	    User.SendKeys(SignupPage_mohan.DateOfBirth, "02131998");
-	    User.selectFromDropDown(SignupPage_mohan.Gender, "Male");
-	    
-	    User.SendKeys(SignupPage_mohan.Address, "Kodumudi");
-	    User.SendKeys(SignupPage_mohan.City, "Erode");
-	    User.SendKeys(SignupPage_mohan.State, "Tamil nadu");
-	    User.SendKeys(SignupPage_mohan.Zipcode, "638151");
-	    
-	    
-	    User.selectFromDropDown(SignupPage_mohan.AccoubtType, "Saving Account");
-	    User.SendKeys(SignupPage_mohan.AccountPin, "12345");
-	    User.SendKeys(SignupPage_mohan.VerifyPin, "12345");
+	  
 	    
 	    
 	}
+	
+	
+	@When("User enters all the details With {string} needed")
+	public void user_enters_all_the_details_With_needed(String email) throws ClassNotFoundException, SQLException, FilloException, ParseException {
+
+		
+		
+		Hashtable<String, String> signup = null;
+		if (config.DataSource == "DATABASE") {
+			signup = new DatabaseConnector().getDataFromDatabase("Signup", "Email", email);
+		} else if (config.DataSource == "FILLO") {
+			signup =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "Email", email, "Signup");
+		}
+		
+		
+		
+		
+		
+		
+		
+
+		  User.SendKeys(SignupPage_mohan.FirstName, signup.get("FirstName"));
+		    User.SendKeys(SignupPage_mohan.LastName, signup.get("LastName"));
+		    User.SendKeys(SignupPage_mohan.Password, signup.get("Password"));
+		    User.SendKeys(SignupPage_mohan.confirmPassword, signup.get("confirmPassword"));
+		    
+		    User.SendKeys(SignupPage_mohan.Email, signup.get("Email"));
+		    User.SendKeys(SignupPage_mohan.PhonenNumber, signup.get("PhoneNumber"));
+		    User.SendKeys(SignupPage_mohan.DateOfBirth, signup.get("DateOfBirth"));
+		    User.selectFromDropDown(SignupPage_mohan.Gender, signup.get("Gender"));
+		    
+		    User.SendKeys(SignupPage_mohan.Address, signup.get("Address"));
+		    User.SendKeys(SignupPage_mohan.City, signup.get("City"));
+		    User.SendKeys(SignupPage_mohan.State,signup.get("State") );
+		    User.SendKeys(SignupPage_mohan.Zipcode, signup.get("Zipcode"));
+		    
+		    
+		    User.selectFromDropDown(SignupPage_mohan.AccoubtType, signup.get("AccoubtType"));
+		    User.SendKeys(SignupPage_mohan.AccountPin, signup.get("AccountPin"));
+		    User.SendKeys(SignupPage_mohan.VerifyPin, signup.get("VerifyPin"));
+		
+		
+		
+	}
+	
+	
+	
+	
 
 	@When("Clicks on the Register account button")
 	public void clicks_on_the_Register_account_button() {

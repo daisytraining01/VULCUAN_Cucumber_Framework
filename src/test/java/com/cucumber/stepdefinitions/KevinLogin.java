@@ -1,12 +1,18 @@
 package com.cucumber.stepdefinitions;
 import static org.junit.Assert.assertEquals;
 
+import java.sql.SQLException;
 import java.util.Hashtable;
 
 import org.apache.log4j.Logger;
 
+import com.akiban.sql.parser.ParseException;
+import com.codoid.products.exception.FilloException;
+import com.cucumber.config;
 import com.cucumber.helper.UserActions;
 import com.cucumber.pageobjects.LoginPage;
+import com.manager.DatabaseConnector;
+import com.manager.TestData;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -42,16 +48,24 @@ public class KevinLogin {
 	   
 	}
 
-	@When("User enters Username : {string} , Password : {string}")
-	public void user_enters_Username_Password(String Username, String Password) throws Throwable{
-	    // Write code here that turns the phrase above into concrete actions
-		User.SendKeys(LoginPage.UserName, Username);
-		User.SendKeys(LoginPage.Password,Password);
-		System.out.println("----------------Username and password are filled with data.");
-		Log.info("Username "+Username+"and Password are filled with data ");
-		Thread.sleep(2000);
-	    
-	}
+	@When("User enters Username and Password : {string}")
+    public void user_enters_Username_and_Password(String data) throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException, java.text.ParseException{
+       
+		
+		Hashtable<String, String> signup = null;
+		if (config.DataSource == "DATABASE") {
+			signup = new DatabaseConnector().getDataFromDatabase("Login", "DataBinding", data);
+		} else if (config.DataSource == "FILLO") {
+			signup =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding",data, "Login");
+		}
+		
+          User.SendKeys(LoginPage.UserName, signup.get("Username") );
+         User.SendKeys(LoginPage.Password, signup.get("Password") );
+        System.out.println("----------------Username and password are filled with data.");
+        Log.info("Username "+data+"and Password are filled with data ");
+        Thread.sleep(2000);
+     
+    }
 
 	@When("Clicks on the submit button")
 	public void clicks_on_the_submit_button()throws Throwable {
@@ -66,9 +80,12 @@ public class KevinLogin {
 
 	@When("Application page is displayed with PIN Number Field")
 	public void application_page_is_displayed_with_PIN_Number_Field() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+
+
 		
-	//	User.SwitchTo_LatestWindow();
+		
+		
+		
 		Thread.sleep(2000);
 		assertEquals(true, User.isDisplayed(LoginPage.PIN));
 		System.out.println("----------------PIN Numebr filed is displayed correctly");
@@ -78,13 +95,20 @@ public class KevinLogin {
 	}
 
 	@When("User enters PIN : {string}")
-	public void user_enters_PIN(String string)throws Throwable {
-		Thread.sleep(2000);
-		//User.SwitchTo_LatestWindow();
-	    // Write code here that turns the phrase above into concrete actions
-		User.SendKeys(LoginPage.PIN,string);
+	public void user_enters_PIN(String data)throws Throwable {
+
+		Hashtable<String, String> signup = null;
+		if (config.DataSource == "DATABASE") {
+			signup = new DatabaseConnector().getDataFromDatabase("Login", "DataBinding", data);
+		} else if (config.DataSource == "FILLO") {
+			signup =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding",data, "Login");
+		}
+		
+		
+		
+		User.SendKeys(LoginPage.PIN,signup.get("Pin"));
 		System.out.println("----------------PIN is entered");
-		Log.info("PIN "+string+" is filled with data ");
+		Log.info("Pin "+signup.get("Pin")+" is filled with data ");
 	  
 	}
 

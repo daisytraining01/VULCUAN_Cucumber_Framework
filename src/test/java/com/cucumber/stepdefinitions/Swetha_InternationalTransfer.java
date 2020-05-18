@@ -9,9 +9,11 @@ import java.util.Hashtable;
 import org.apache.log4j.Logger;
 
 import com.codoid.products.exception.FilloException;
+import com.cucumber.config;
 import com.cucumber.helper.UserActions;
 import com.cucumber.pageobjects.DomesticPage;
 import com.cucumber.pageobjects.InternationalPage;
+import com.manager.DatabaseConnector;
 import com.manager.TestData;
 
 import io.cucumber.java.en.Given;
@@ -68,7 +70,19 @@ public class Swetha_InternationalTransfer {
 	
 	@Then("user enters fund transfer {string}")
 	public void user_enters_fund_transfer(String data) throws ClassNotFoundException, SQLException, FilloException, ParseException, InterruptedException {
-		Hashtable<String, String> amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", data, "InternationalFT");
+		
+		
+		Hashtable<String, String> amountTranserData = null;
+		if (config.DataSource == "DATABASE") {
+			amountTranserData = new DatabaseConnector().getDataFromDatabase("InternationalTransfer", "DataBinding", data);
+		} else if (config.DataSource == "FILLO") {
+			amountTranserData =  new TestData().getCommon_Data("./src/test/resources/database/TestData.xlsx", "DataBinding", data, "InternationalFT");
+		}
+		
+		
+		
+		
+		
  		Thread.sleep(3000);
  		System.out.println(amountTranserData);
  		System.out.println(amountTranserData.get("ReciverBankName"));

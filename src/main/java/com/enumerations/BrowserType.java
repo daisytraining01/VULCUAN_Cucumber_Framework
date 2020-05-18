@@ -5,3 +5,5 @@ public enum BrowserType {
 	Firefox,
 	InternetExplorer
 }
+
+

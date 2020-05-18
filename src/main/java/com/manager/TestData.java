@@ -48,6 +48,8 @@ public class TestData {
 				if (!(columnValue == "")) {
 					data_values.put(columnName, columnValue);
 				}
+				
+				System.out.println(columnName+columnValue);
 			}
 			Data_RS.close();
 			connection.close();
